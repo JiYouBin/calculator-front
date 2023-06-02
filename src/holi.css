@@ -1,0 +1,237 @@
+/* 살아남기 타이틀 */
+@font-face {
+  font-family: 'RixYeoljeongdo_Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 설명 순수 고딕 */
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 버튼 */
+@font-face {
+  font-family: 'SBAggroB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 결과 */
+@font-face {
+  font-family: 'KIMM_Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+/* alert */
+@font-face {
+  font-family: '국립박물관문화재단클래식B';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#cal-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.holi_container {
+  background-color: white;
+  height: 937px;
+  text-align: center;
+  position: relative;
+}
+
+.holi-title {
+  display: inline-block;
+  background-color: white;
+  padding: 40px 20px 10px 20px;
+  border-bottom: 3px solid black;
+  font-family: 'RixYeoljeongdo_Regular';
+  font-size: 2em;
+}
+
+/* ----------------------- 연차 / 연봉 토글 버튼 ----------------------- */
+.toggle_button_container {
+  text-align: center;
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.toggle_button_container .holi_salary_btn,
+.toggle_button_container .holi_holi_btn {
+  font-family: 'SBAggroB';
+  font-size: 20px;
+  padding: 3px 5px;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+/* ----------------------- 연차 / 연봉 토글 버튼 end ----------------------- */
+/* 윗칸 */
+.holical {
+  padding: 70px 100px;
+  width: auto;
+}
+
+.join_date,
+.worked_date {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.join_date_text,
+.worked_date_text {
+  font-family: 'RixYeoljeongdo_Regular';
+  font-size: 1.3em;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+/* 연도-월-일 input 값 */
+input[type="date"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.calender::-webkit-clear-button,
+.calender::-webkit-inner-spin-button {
+  display: inline-block;
+}
+
+.calender {
+  font-family: 'RixYeoljeongdo_Regular';
+  font-size: 1.5em;
+  width: 350px;
+  height: 60px;
+  padding: 0 15px;
+  border: black solid 5px;
+  outline: none;
+  background: white;
+  background: url('./img/calender.png') no-repeat center right / 3.4rem auto;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.calender_2 {
+  font-family: 'RixYeoljeongdo_Regular';
+  font-size: 1.5em;
+  width: 350px;
+  height: 60px;
+  padding: 0 15px;
+  border: #1100cc solid 5px;
+  background-color: #fcf9e1;
+  text-align: center;
+  outline: none;
+}
+
+/* 계산하기 */
+.cal-btn_2 {
+  padding: 10px 60px;
+  align-items: center;
+  color: white;
+  font-family: 'SBAggroB';
+  font-size: 25px;
+  cursor: pointer;
+  box-shadow: 3px 4px 0px 0px #0036cc;
+  background: linear-gradient(to bottom, #4d7bfa 5%, #1100cc 100%);
+  border-radius: 5px;
+  border: 1px solid #4d7bfa;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #4d7bfa;
+}
+
+.cal-btn_2:hover {
+  background: linear-gradient(to bottom, #1100cc 5%, #4d7bfa 100%);
+  background-color: #1100cc;
+}
+
+.cal-btn_2:active {
+  position: relative;
+  top: 1px;
+}
+
+/* 정보 */
+.info-text {
+  margin-bottom: 70px;
+  padding: 10px;
+  font-family: 'NanumSquareNeo-Variable';
+  font-weight: 600;
+  color: #222222;
+  font-size: 14px;
+}
+
+.info-icon {
+  font-size: 18px;
+  vertical-align: bottom;
+  color: #1100cc;
+}
+
+/* 결과값 */
+.holiresult {
+  height: 450px;
+  text-align: center;
+  background: linear-gradient(to top, #1100cc, #2436da, #1100cc);
+  color: white;
+  padding: 30px;
+  font-family: 'KIMM_Bold';
+}
+
+.holiresult>ul {
+  width: 100%;
+  font-size: 45px;
+  line-height: 100px;
+}
+
+.holiresult>ul>span {
+  font-size: 80px;
+}
+
+.holiresult>ul>li {
+  width: 100%;
+  margin-top: 60px;
+  list-style: none;
+  line-height: 20px;
+  font-size: 14px;
+}
+
+/* 클리어 */
+.holical::after,
+.join_date::after,
+.worked_date::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/* alert */
+.swal2-title {
+  font-family: '국립박물관문화재단클래식B';
+  font-weight: normal !important;
+  padding: 0.8em !important;
+  font-size: 2em!important;
+  color: black !important;
+}

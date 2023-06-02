@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+}
+
+/* 토글버튼 */
+.toggle_button_container .salary_salary_btn,
+.toggle_button_container .salary_holi_btn {
+    font-family: 'SBAggroB';
+    font-size: 20px;
+    padding: 3px 5px;
+    border: 3px solid black;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------- */
+/* 값 입력 */
+.paycheck-container {
+    width: 50%;
+    height: 937px;
+    float: left;
+}
+
+/* 타이틀 */
+.paycheck-header {
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.salary-title {
+    display: inline-block;
+    background-color: white;
+    padding: 40px 20px 10px 20px;
+    border-bottom: 3px solid black;
+    font-family: 'RixYeoljeongdo_Regular';
+    font-size: 2em;
+    clear: both;
+}
+
+.paycheck-body {
+    padding: 50px 200px;
+}
+
+/* 인풋박스 */
+.paycheck-box {
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px 2px black;
+    padding: 60px 80px;
+}
+
+.paycheck-box p {
+    font-family: 'RixYeoljeongdo_Regular';
+    font-size: 1em;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.paycheck-box input {
+    border: 3px solid black;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    padding: 0px 10px;
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+
+.paycheck-box input::placeholder {
+    color: rgb(147, 194, 233);
+    font-size: 16px;
+}
+
+.pay-input,
+.taxfree-input,
+.form_field_3 {
+    width: 100%;
+    position: relative;
+}
+
+.won1,
+.won2,
+.won3 {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    font-family: 'NanumSquareNeo-Variable';
+    font-weight: bold;
+    z-index: 5;
+}
+
+.pay-input,
+.taxfree-input {
+    margin-bottom: 30px;
+}
+
+/* 택스프리 인포 아이콘 */
+.taxfree-icon {
+    vertical-align: middle;
+    color: #1100cc;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.taxfree-info {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.tooltip-semo {
+    width: 0px;
+    height: 0px;
+    border-bottom: calc(8px * 1) solid #bed6f7;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    margin-left: 35px;
+}
+
+.tooltip {
+    background-color: #bed6f7;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 14px;
+    width: 305px;
+    line-height: 20px;
+    word-break: keep-all;
+}
+
+.tooltip-present {
+    display: block;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* ---------------------------------------------- */
+/* 업다운 */
+.form_field {
+    margin-bottom: 30px;
+}
+
+.spin_button,
+.spin_button2 {
+    width: calc(100%/2);
+    float: left;
+}
+
+.spin_button2 {
+    padding-left: 35px;
+}
+
+.spin_button > button,
+.spin_button2 button {
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border: 3px solid black;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+#dependent {
+    width: 60px;
+    height: 50px;
+    text-align: center;
+}
+
+/* ---------------------------------------------- */
+/* 토글 */
+.form_field_2 {
+    margin-bottom: 30px;
+}
+
+.spin_button #myButton1,
+.spin_button #myButton2,
+.spin_button2 #myButton3,
+.spin_button2 #myButton4 {
+    font-family: 'SBAggroB';
+    font-size: 18px;
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+}
+
+/* ---------------------------------------------- */
+/* 카드값 */
+.form_field_3 {
+    margin-bottom: 30px;
+}
+
+.cal-btn {
+    width: 100%;
+    height: 50px;
+    background-color: #1100cc;
+    color: white;
+    border: 0px;
+}
+
+.cal-btn {
+    padding: 10px 60px;
+    align-items: center;
+    color: white;
+    box-shadow: 3px 4px 0px 0px #0036cc;
+    background: linear-gradient(to bottom, #4d7bfa 5%, #1100cc 100%);
+    border-radius: 5px;
+    border: 1px solid #4d7bfa;
+    font-family: 'SBAggroB';
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #1100cc;
+    cursor: pointer;
+}
+
+.cal-btn:hover {
+    background: linear-gradient(to bottom, #1100cc 5%, #4d7bfa 100%);
+    background-color: #1100cc;
+}
+
+.cal-btn:active {
+    position: relative;
+    top: 1px;
+}
+
+/* ---------------------------------------------- */
+/* 결과값 */
+.result-container {
+    width: 50%;
+    height: 937px;
+    float: left;
+    background-image: url('./img/cal-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #bed6f7;
+    position: relative;
+}
+
+.result-box {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 62%;
+    min-height: 150px;
+    background: linear-gradient(to bottom, #d4d4d4 2%, white 10%, white 80%, #ececec);
+    padding: 35px 50px;
+    border: 2px solid black;
+    box-shadow: 5px 8px 10px 1px rgb(0, 0, 0, 0.6);
+}
+
+.result-box ul {
+    padding: 0px 50px;
+}
+
+.result-box ul h1 {
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'RixYeoljeongdo_Regular';
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.result-box dl {
+    padding: 0px 15px 10px;
+}
+
+.result-box dl .title {
+    font-family: 'NanumSquareNeo-Variable';
+}
+
+.result-box dl .result {
+    float: right;
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* 결과값 출력 */
+.pay_result {
+    width: 100%;
+    border-top: 3px solid black;
+}
+
+.pay_result-box {
+    background: linear-gradient(to top, #1100cc, #2436da, #1100cc);
+    color: white;
+    margin: 20px 0px 0px;
+    padding: 30px;
+}
+
+.pay_result-title {
+    font-family: 'NanumSquareNeo-Variable';
+    font-size: 15px;
+    margin: 0px;
+}
+
+.pay_result-content {
+    text-align: right;
+    font-family: 'KIMM_Bold';
+    font-size: 32px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.content-won {
+    font-size: 15px;
+}
+
+/* ---------------------------------------------- */
+/* 클리어 */
+.form_field::after,
+.form_field_2::after {
+    display: block;
+    content: "";
+    clear: both;
+}
